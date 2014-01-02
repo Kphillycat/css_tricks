@@ -1,0 +1,58 @@
+CSS button interview test
+http://codepen.io/mobify/pen/GtqKj
+/*
+    
+    INSTRUCTIONS
+
+    Using CSS properties alone, recreate this button: 
+
+        http://i.imgur.com/gnZnY.png. 
+
+    Spend no longer than 15 minutes on it, we don't 
+    expect it to be a perfect match. It's open book, 
+    feel free to hit Google but be prepared to 
+    explain your solution.
+
+*/
+a {
+    margin: 20px;
+    font-family: arial;
+    text-transform: uppercase;
+    display: inline-block;
+    font: bold 150% sans-serif;
+    text-decoration:none;
+    text-align: center;
+    border-radius: 5px;
+    padding: 12px 24px;
+    box-shadow: 0px 0px 4px #222, 0px 0px 0px 9px #CCC,0px 0px 0px 11px #FFF, 0px 0px 0px 13px #555, 0px 0px 2px 10px #777, 0px 0px 30px black;
+    color:#333;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #EEE), color-stop(100%, #999));
+   }
+ 
+ 
+a:before, a:after {
+content: "\2605";
+font-size: .75em; color: #777;
+ 
+}
+#Questions
+- How to handle the multiple borders? With multiple box shadows.
+- Text-transform Uppercase
+- How to handle the stars? unicode and psuedo elements (before, after)
+Psuedo elements in CSS not HTML to affect styling and not the content. Sometimes good to create new elements to hold styles. 
+- Subtle text shadow under the letters. text-shadow: 0 .75px white
+- Linear gradient or inset box shadow to split the background of the button
+- Border radius nesting is not great. Give the box shadow a border radius.
+- Be careful about nest border radius. 
+- font-family: Helvetica, Arial, sans-serif;
+- Curves on Helvetica are flat 
+- curves on arial 
+
+Blog:
+- Write about how to approach this challenge, then how we will approach it next time.
+
+On interview questions
+
+
+
+
